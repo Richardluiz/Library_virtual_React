@@ -1,0 +1,152 @@
+:root {
+  --background-image: url("../img/Bokkz.png");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #70747a;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: #232a31;
+  padding: 0 2rem;
+}
+
+nav {
+  position: relative;
+}
+
+img {
+  width: 60px;
+  margin-top: 12px;
+}
+
+.navbar-items {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.navbar-items a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-items img {
+  width: 30px;
+  margin-left: 20px;
+  height: 30px;
+}
+
+.main-banner {
+  background-image: url(https://images5.alphacoders.com/132/thumb-1920-1326363.png);
+  padding: 10rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+  font-size: 54px;
+}
+
+.main-banner p {
+  font-size: 32px;
+}
+
+.estantes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.estante {
+  width: 30%;
+  border: 5px solid #ccc;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #232a31;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30%;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav li {
+  margin: 0 10px;
+  color: #050404;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer .social-media a {
+  margin: 0 5px;
+}
+
+.favorites-container {
+  position: relative;
+  display: inline-block;
+}
+
+.favorites-list {
+  position: static;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 40px;
+  display: none;
+}
+
+.favorites-list li img {
+  width: 50px;
+  height: auto;
+}
+
+.favorites-container:hover .favorites-list,
+.favorites-container:focus-within .favorites-list .favorites-list.show {
+  display: block;
+}
